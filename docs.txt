@@ -1,0 +1,7 @@
+
+
+React 
+Props 
+- plain js object,used to send data from parent child
+
+
