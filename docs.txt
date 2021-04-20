@@ -1,7 +1,20 @@
 
+Javascript
+    immutable - string ,number,bool
+    mutable - array,object
+
 
 React 
 Props 
-- plain js object,used to send data from parent child
+    - plain js object,used to send data from parent child
+    - props are immutable that cant be changed in child component
+
+State
+    - any data type of js,that used to store data internally in component
+    - the state can be changed internally in the component
+
+Events
+    - We can add event on react elements .click,hover,drag  etc...
+
 
 
