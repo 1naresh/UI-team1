@@ -7,11 +7,14 @@ import Child from "./child"
 
 import "./app.css" 
 import { useState } from "react"
+import MyComp from "./comp-cls"
 
 const App = () =>{
     const valueState = useState("mark")
     const value = valueState[0]
     const setValue = valueState[1]
+
+    
     // let name = "mark"
     const dosome = (e) =>{
         console.log("input is changed",e.target.value)
@@ -25,8 +28,9 @@ const App = () =>{
 
     return(
         <div>
+            <MyComp prop1={78} />
             {/* <button onMouseOver={dosome} >change</button> */}
-            <input onChange={dosome} value={value} />
+            {/* <input onChange={dosome} value={value} /> */}
 
 
             {/* <div> {value.a} </div>

@@ -5,16 +5,46 @@ Javascript
 
 
 React 
-Props 
-    - plain js object,used to send data from parent child
-    - props are immutable that cant be changed in child component
 
-State
-    - any data type of js,that used to store data internally in component
-    - the state can be changed internally in the component
+Class component
+    Syntax 
+        class ClassName extends React.Component{
+
+        }
+    Props 
+        this.props
+        - plain js object,used to send data from parent child
+        - props are immutable that cant be changed in child component
+    
+    State 
+        this.state
+        this.setState - (object,callback)
+        -  state is plain Javascript object.That can be access using this.state
+        - state can be updated using setState method
+            - plain object
+            - call back
+
+Function Compmonent
+    Hooks
+        useState used to create state in Function component
+    Props 
+        - Compmonent Name must be pascal case 
+        - it should always rfeturn jsx
+        - can access using props parameter 
+        - plain js object,used to send data from parent components to child components
+        - props are immutable that cant be changed in child component
+    State
+        - any data type of js,that used to store data internally in component
+        - the state can be changed internally in the component
+        - A component can have multiple states
+        - state can be any datatype of Javascript
+
+
+
+
 
 Events
-    - We can add event on react elements .click,hover,drag  etc...
+    - We can add event on react elements. click,hover,drag  etc...
 
 
 
