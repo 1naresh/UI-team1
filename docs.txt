@@ -1,8 +1,12 @@
+Pending
+    && , ||
+
 
 Javascript
     immutable - string ,number,bool
     mutable - array,object
-
+    
+    functions - block of Javascript code
 
 React 
 
@@ -38,6 +42,9 @@ Function Compmonent
         - the state can be changed internally in the component
         - A component can have multiple states
         - state can be any datatype of Javascript
+    
+    Conditional Rendering
+        - used to remove remove elements or add react elements dynamically
 
 
 
