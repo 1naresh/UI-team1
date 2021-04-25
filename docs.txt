@@ -44,7 +44,13 @@ Function Compmonent
         - state can be any datatype of Javascript
     
     Conditional Rendering
-        - used to remove remove elements or add react elements dynamically
+        - used to remove elements or add react elements dynamically
+
+    Rendering List
+        - it is the way of Rendering multiple elements
+        - create an arr with strings,numbers,object and render this arr using map
+        - create an arr from state with strings,numbers,object and render this arr using map
+        - create an arr from state with strings,numbers,object and render this arr using map and update state
 
 
 
