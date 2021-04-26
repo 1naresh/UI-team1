@@ -28,7 +28,7 @@ const List = props =>{
     // let arr = [
     //     {key:"a",age:12},
     //     {key:"b",age:13},
-    // ]
+    // ] 
     return(
         <div style={{margin:"100px"}} >
             {
