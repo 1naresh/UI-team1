@@ -1,7 +1,26 @@
 
-import React from 'react';
+
+
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import Lcmethods from "./basics/lc-methods1";
 
-ReactDOM.render(<App /> ,document.getElementById('root'));
+function App(){
+    let result = useState(true)
+    let show = result[0]
+    let setShow = result[1]
+    console.log("parent is rendering")
+    return(
+        <div>
+            parent
+            <button onClick={()=> setShow(false) } >hide</button>
+            { show && <Lcmethods />}
+            
+        </div>
+    )
+}
 
+ReactDOM.render( <App /> ,document.getElementById('root')); 
+
+
+// jsx new data type
