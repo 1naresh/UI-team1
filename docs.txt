@@ -82,7 +82,8 @@ Function Compmonent
             such as cancelled network requests, or cleaning up any DOM elements created in componentDidMount.
 
 
-
+    diff between class component and function component :
+    
     
 
 
