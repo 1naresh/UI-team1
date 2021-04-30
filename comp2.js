@@ -1,41 +1,25 @@
-import { useState } from "react"
 
+
+import { useState,useEffect } from "react"
+import "./app.css"
 
 const Comp2 = props =>{
-    let [age,setAge] = useState(23)
-    let [show,setShow] = useState(false)
-    let [items,setItems] = useState(["a","b","c"])
+    useEffect(()=>{
+        console.log(" func componentDidMount")
+        return () =>{
+            console.log(" func componentWillUnmount")
+        }
+    },[])
 
+    useEffect(()=>{
+        console.log(" func componentDidUpdate")
+    })
 
-    // let result = useState(23)
-    // let age = result[0]
-    // let setAge = result[1]
-
-    const change = (e) =>{
-        setAge(24)
-        setShow(true)
-
-        let newItems = [...items]
-        newItems.push("d")
-        setItems(newItems)
-
-    
-    }
+    console.log(" func render")
     return(
         <div>
             <h1>func</h1>
-            {
-                items.map(item=>{
-                    return(
-                        <div>{item} </div>
-                    )
-                })
-            }
-            <div> {age} </div>
-            {show && <div> hidden </div> }
-            <button onClick={change} >
-                change state
-            </button>
+            <div className="text-center" > {props.prop1} </div>
         </div>
     )
 }
